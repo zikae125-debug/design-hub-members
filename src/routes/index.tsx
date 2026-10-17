@@ -68,7 +68,7 @@ function Index() {
               {WEEK.map((v, i) => (
                 <div key={i} className="flex flex-1 flex-col items-center gap-2">
                   <span className="text-xs font-medium text-primary">{v}%</span>
-                  <div className={`w-full max-w-12 rounded-xl ${i === 4 ? "bg-primary" : "bg-muted"}`} style={{ height: `${v}%` }} />
+                  <div className="flex h-28 w-full max-w-12 items-end"><div className={`w-full rounded-xl ${i === 4 ? "bg-primary" : "bg-muted"}`} style={{ height: `${v}%` }} /></div>
                   <span className="text-xs text-muted-foreground">{["S", "T", "Q", "Q", "S", "S", "D"][i]}</span>
                 </div>
               ))}
