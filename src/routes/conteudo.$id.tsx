@@ -57,7 +57,7 @@ function Page() {
             </div>
           </div>
           <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
-            <div><p className="text-xs text-muted-foreground">Aula {current + 1}</p><h2 className="text-xl font-semibold">{p.lessons[current].title}</h2></div>
+            <div><p className="text-xs text-muted-foreground">Aula {current + 1}</p><h2 className="text-xl font-semibold">{p.lessons[current]?.title}</h2></div>
             <div className="flex gap-2">
               <button onClick={() => toggle(p.id)} className="inline-flex items-center gap-1.5 rounded-full border bg-card px-4 py-2 text-sm">
                 <Heart className={`h-4 w-4 ${isFav(p.id) ? "fill-primary text-primary" : ""}`} />Favoritar
